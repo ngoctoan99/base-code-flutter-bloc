@@ -33,7 +33,9 @@ class MenuItem extends StatelessWidget {
             builder: (context, state) {
               return Row(
                 children: [
-                  SvgWidget(ic: icLeft),
+                  SvgWidget(ic: icLeft,
+                    color: Colors.red,
+                  ),
                   const SizedBox(width: 16),
                   Text(
                     title,

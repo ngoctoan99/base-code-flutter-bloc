@@ -14,7 +14,7 @@ class Loading extends StatelessWidget {
       canPop: false,
       child: Center(
         child: LoadingAnimationWidget.hexagonDots(
-          color: Theme.of(context).primaryColor,
+          color: Colors.red,
           size: size,
         ),
       ),

@@ -93,7 +93,7 @@ class WellComeScreen extends StatelessWidget {
                                 height: 8,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(16),
-                                    color: Colors.black),
+                                    color: Colors.red),
                               );
                             })),
                         // Padding(

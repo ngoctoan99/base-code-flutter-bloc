@@ -85,12 +85,13 @@ class _CustomTextFieldState extends State<CustomTextField> {
           maxLength: widget.maxLength,
           decoration: InputDecoration(
               hintText: widget.hintText,
+              hintStyle: TextStyle(color: Colors.black),
               prefixIcon: widget.prefixWidget,
               suffixIcon: widget.icRight != null || widget.icon != null
                   ? InkWell(
                       onTap: () => widget.actionRight!.call(),
                       child: widget.icon != null
-                          ? Icon(widget.icon)
+                          ? Icon(widget.icon,color: Colors.black,)
                           : SvgWidget(ic: widget.icRight!))
                   : null,
               counterText: ''),

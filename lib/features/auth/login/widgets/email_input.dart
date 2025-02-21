@@ -27,7 +27,7 @@ class EmailInput extends StatelessWidget {
           hintText: S.of(context).hint_text_email,
           keyboardType: TextInputType.emailAddress,
           error: state.errEmail,
-          prefixWidget: SvgWidget(ic: 'assets/icons/ic_email.svg'),
+          prefixWidget: SvgWidget(ic: 'assets/icons/ic_email.svg' ,color: Colors.black,),
           onChanged: (val) => bloc.add(LoginEvent.onChangeEmail(val)),
           ctr: ctrEmail,
         );

@@ -23,7 +23,7 @@ class PasswordInput extends StatelessWidget {
           hintText: S.of(context).hint_text_password,
           obscureText: state.visibilityOffPassword,
           error: state.errPassword,
-          prefixWidget: SvgWidget(ic: 'assets/icons/ic_password.svg'),
+          prefixWidget: SvgWidget(ic: 'assets/icons/ic_password.svg',color: Colors.black),
           icon: state.visibilityOffPassword
               ? Icons.visibility_off
               : Icons.visibility,
