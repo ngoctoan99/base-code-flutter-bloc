@@ -19,32 +19,38 @@ mixin _$SplashEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() onNavigate,
+    required TResult Function() OnSavedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? onNavigate,
+    TResult? Function()? OnSavedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? onNavigate,
+    TResult Function()? OnSavedLanguage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(OnNavigate value) onNavigate,
+    required TResult Function(_OnSavedLanguage value) OnSavedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(OnNavigate value)? onNavigate,
+    TResult? Function(_OnSavedLanguage value)? OnSavedLanguage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(OnNavigate value)? onNavigate,
+    TResult Function(_OnSavedLanguage value)? OnSavedLanguage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -113,6 +119,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() onNavigate,
+    required TResult Function() OnSavedLanguage,
   }) {
     return onNavigate();
   }
@@ -121,6 +128,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? onNavigate,
+    TResult? Function()? OnSavedLanguage,
   }) {
     return onNavigate?.call();
   }
@@ -129,6 +137,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? onNavigate,
+    TResult Function()? OnSavedLanguage,
     required TResult orElse(),
   }) {
     if (onNavigate != null) {
@@ -141,6 +150,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(OnNavigate value) onNavigate,
+    required TResult Function(_OnSavedLanguage value) OnSavedLanguage,
   }) {
     return onNavigate(this);
   }
@@ -149,6 +159,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(OnNavigate value)? onNavigate,
+    TResult? Function(_OnSavedLanguage value)? OnSavedLanguage,
   }) {
     return onNavigate?.call(this);
   }
@@ -157,6 +168,7 @@ class _$OnNavigateImpl implements OnNavigate {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(OnNavigate value)? onNavigate,
+    TResult Function(_OnSavedLanguage value)? OnSavedLanguage,
     required TResult orElse(),
   }) {
     if (onNavigate != null) {
@@ -171,8 +183,114 @@ abstract class OnNavigate implements SplashEvent {
 }
 
 /// @nodoc
+abstract class _$$OnSavedLanguageImplCopyWith<$Res> {
+  factory _$$OnSavedLanguageImplCopyWith(_$OnSavedLanguageImpl value,
+          $Res Function(_$OnSavedLanguageImpl) then) =
+      __$$OnSavedLanguageImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$OnSavedLanguageImplCopyWithImpl<$Res>
+    extends _$SplashEventCopyWithImpl<$Res, _$OnSavedLanguageImpl>
+    implements _$$OnSavedLanguageImplCopyWith<$Res> {
+  __$$OnSavedLanguageImplCopyWithImpl(
+      _$OnSavedLanguageImpl _value, $Res Function(_$OnSavedLanguageImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SplashEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$OnSavedLanguageImpl implements _OnSavedLanguage {
+  const _$OnSavedLanguageImpl();
+
+  @override
+  String toString() {
+    return 'SplashEvent.OnSavedLanguage()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$OnSavedLanguageImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() onNavigate,
+    required TResult Function() OnSavedLanguage,
+  }) {
+    return OnSavedLanguage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? onNavigate,
+    TResult? Function()? OnSavedLanguage,
+  }) {
+    return OnSavedLanguage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? onNavigate,
+    TResult Function()? OnSavedLanguage,
+    required TResult orElse(),
+  }) {
+    if (OnSavedLanguage != null) {
+      return OnSavedLanguage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(OnNavigate value) onNavigate,
+    required TResult Function(_OnSavedLanguage value) OnSavedLanguage,
+  }) {
+    return OnSavedLanguage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(OnNavigate value)? onNavigate,
+    TResult? Function(_OnSavedLanguage value)? OnSavedLanguage,
+  }) {
+    return OnSavedLanguage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(OnNavigate value)? onNavigate,
+    TResult Function(_OnSavedLanguage value)? OnSavedLanguage,
+    required TResult orElse(),
+  }) {
+    if (OnSavedLanguage != null) {
+      return OnSavedLanguage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnSavedLanguage implements SplashEvent {
+  const factory _OnSavedLanguage() = _$OnSavedLanguageImpl;
+}
+
+/// @nodoc
 mixin _$SplashState {
   PageCommand? get pageCmd => throw _privateConstructorUsedError;
+  String get selectedLocale => throw _privateConstructorUsedError;
 
   /// Create a copy of SplashState
   /// with the given fields replaced by the non-null parameter values.
@@ -187,7 +305,7 @@ abstract class $SplashStateCopyWith<$Res> {
           SplashState value, $Res Function(SplashState) then) =
       _$SplashStateCopyWithImpl<$Res, SplashState>;
   @useResult
-  $Res call({PageCommand? pageCmd});
+  $Res call({PageCommand? pageCmd, String selectedLocale});
 }
 
 /// @nodoc
@@ -206,12 +324,17 @@ class _$SplashStateCopyWithImpl<$Res, $Val extends SplashState>
   @override
   $Res call({
     Object? pageCmd = freezed,
+    Object? selectedLocale = null,
   }) {
     return _then(_value.copyWith(
       pageCmd: freezed == pageCmd
           ? _value.pageCmd
           : pageCmd // ignore: cast_nullable_to_non_nullable
               as PageCommand?,
+      selectedLocale: null == selectedLocale
+          ? _value.selectedLocale
+          : selectedLocale // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -224,7 +347,7 @@ abstract class _$$SplashStateImplCopyWith<$Res>
       __$$SplashStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({PageCommand? pageCmd});
+  $Res call({PageCommand? pageCmd, String selectedLocale});
 }
 
 /// @nodoc
@@ -241,12 +364,17 @@ class __$$SplashStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? pageCmd = freezed,
+    Object? selectedLocale = null,
   }) {
     return _then(_$SplashStateImpl(
       pageCmd: freezed == pageCmd
           ? _value.pageCmd
           : pageCmd // ignore: cast_nullable_to_non_nullable
               as PageCommand?,
+      selectedLocale: null == selectedLocale
+          ? _value.selectedLocale
+          : selectedLocale // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -254,14 +382,18 @@ class __$$SplashStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$SplashStateImpl extends _SplashState {
-  const _$SplashStateImpl({this.pageCmd}) : super._();
+  const _$SplashStateImpl({this.pageCmd, this.selectedLocale = 'en_US'})
+      : super._();
 
   @override
   final PageCommand? pageCmd;
+  @override
+  @JsonKey()
+  final String selectedLocale;
 
   @override
   String toString() {
-    return 'SplashState(pageCmd: $pageCmd)';
+    return 'SplashState(pageCmd: $pageCmd, selectedLocale: $selectedLocale)';
   }
 
   @override
@@ -269,11 +401,13 @@ class _$SplashStateImpl extends _SplashState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SplashStateImpl &&
-            (identical(other.pageCmd, pageCmd) || other.pageCmd == pageCmd));
+            (identical(other.pageCmd, pageCmd) || other.pageCmd == pageCmd) &&
+            (identical(other.selectedLocale, selectedLocale) ||
+                other.selectedLocale == selectedLocale));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pageCmd);
+  int get hashCode => Object.hash(runtimeType, pageCmd, selectedLocale);
 
   /// Create a copy of SplashState
   /// with the given fields replaced by the non-null parameter values.
@@ -285,11 +419,15 @@ class _$SplashStateImpl extends _SplashState {
 }
 
 abstract class _SplashState extends SplashState {
-  const factory _SplashState({final PageCommand? pageCmd}) = _$SplashStateImpl;
+  const factory _SplashState(
+      {final PageCommand? pageCmd,
+      final String selectedLocale}) = _$SplashStateImpl;
   const _SplashState._() : super._();
 
   @override
   PageCommand? get pageCmd;
+  @override
+  String get selectedLocale;
 
   /// Create a copy of SplashState
   /// with the given fields replaced by the non-null parameter values.

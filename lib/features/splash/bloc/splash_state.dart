@@ -5,5 +5,6 @@ class SplashState with _$SplashState {
   const SplashState._();
   const factory SplashState({
     PageCommand? pageCmd,
+    @Default('en_US')String selectedLocale,
   }) = _SplashState;
 }

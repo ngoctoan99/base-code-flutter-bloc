@@ -13,6 +13,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bloc = getIt.get<SplashBloc>();
     return Scaffold(
       body: BlocProvider<SplashBloc>(
         create: (_) => getIt<SplashBloc>()..add(SplashEvent.onNavigate()),
@@ -26,6 +27,7 @@ class SplashScreen extends StatelessWidget {
                 (route) => false,
               );
             }
+            bloc.add(SplashEvent.OnSavedLanguage());
           },
           child: Stack(
             children: [
