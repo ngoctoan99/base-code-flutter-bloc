@@ -1,9 +1,12 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../core/bloc/page_command.dart';
 import '../../../core/common/enums/gender.dart';
 import '../../../core/common/enums/sheet_type.dart';
@@ -74,6 +77,13 @@ class EditProfileBloc extends Bloc<EditProfileEvent, EditProfileState> {
     });
 
     on<_OnUpdate>((event, emit) {});
+
+    on<_OnSelectedAvatar>((event, emit) async {
+      String avatar = await _pickImage();
+      emit(state.copyWith(
+        avatar: avatar
+          ),);
+    });
   }
 
   Future<void> emitCountry(
@@ -101,6 +111,18 @@ class EditProfileBloc extends Bloc<EditProfileEvent, EditProfileState> {
     return countries;
   }
 
+
+  Future<String> _pickImage() async{
+    final ImagePicker picker = ImagePicker();
+    final XFile? pickFile = await picker.pickImage(source: ImageSource.gallery);
+    if(pickFile != null){
+      if (kDebugMode) {
+        print("TTT::_pickImage ${pickFile.path}");
+      }
+      return pickFile.path ;
+    }
+    return "";
+  }
   bool get isSaved {
     return state.fullName != null && state.phoneNumber != null;
   }

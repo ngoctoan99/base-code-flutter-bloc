@@ -31,6 +31,7 @@ mixin _$EditProfileEvent {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -48,6 +49,7 @@ mixin _$EditProfileEvent {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +67,7 @@ mixin _$EditProfileEvent {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -84,6 +87,7 @@ mixin _$EditProfileEvent {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -101,6 +105,7 @@ mixin _$EditProfileEvent {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -118,6 +123,7 @@ mixin _$EditProfileEvent {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -165,12 +171,18 @@ class __$$OnUpdateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnUpdateImpl implements _OnUpdate {
+class _$OnUpdateImpl with DiagnosticableTreeMixin implements _OnUpdate {
   const _$OnUpdateImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onUpdate()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'EditProfileEvent.onUpdate'));
   }
 
   @override
@@ -198,6 +210,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onUpdate();
   }
@@ -218,6 +231,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onUpdate?.call();
   }
@@ -238,6 +252,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onUpdate != null) {
@@ -263,6 +278,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onUpdate(this);
   }
@@ -283,6 +299,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onUpdate?.call(this);
   }
@@ -303,6 +320,7 @@ class _$OnUpdateImpl implements _OnUpdate {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onUpdate != null) {
@@ -351,15 +369,25 @@ class __$$OnChangeFullNameImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeFullNameImpl implements _OnChangeFullName {
+class _$OnChangeFullNameImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeFullName {
   const _$OnChangeFullNameImpl(this.text);
 
   @override
   final String text;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangeFullName(text: $text)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangeFullName'))
+      ..add(DiagnosticsProperty('text', text));
   }
 
   @override
@@ -398,6 +426,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeFullName(text);
   }
@@ -418,6 +447,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeFullName?.call(text);
   }
@@ -438,6 +468,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeFullName != null) {
@@ -463,6 +494,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeFullName(this);
   }
@@ -483,6 +515,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeFullName?.call(this);
   }
@@ -503,6 +536,7 @@ class _$OnChangeFullNameImpl implements _OnChangeFullName {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeFullName != null) {
@@ -559,15 +593,25 @@ class __$$OnChangeEmailImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeEmailImpl implements _OnChangeEmail {
+class _$OnChangeEmailImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeEmail {
   const _$OnChangeEmailImpl(this.text);
 
   @override
   final String text;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangeEmail(text: $text)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangeEmail'))
+      ..add(DiagnosticsProperty('text', text));
   }
 
   @override
@@ -605,6 +649,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeEmail(text);
   }
@@ -625,6 +670,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeEmail?.call(text);
   }
@@ -645,6 +691,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeEmail != null) {
@@ -670,6 +717,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeEmail(this);
   }
@@ -690,6 +738,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeEmail?.call(this);
   }
@@ -710,6 +759,7 @@ class _$OnChangeEmailImpl implements _OnChangeEmail {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeEmail != null) {
@@ -766,15 +816,25 @@ class __$$OnChangePhoneNumberImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
+class _$OnChangePhoneNumberImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangePhoneNumber {
   const _$OnChangePhoneNumberImpl(this.text);
 
   @override
   final String text;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangePhoneNumber(text: $text)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangePhoneNumber'))
+      ..add(DiagnosticsProperty('text', text));
   }
 
   @override
@@ -813,6 +873,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangePhoneNumber(text);
   }
@@ -833,6 +894,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangePhoneNumber?.call(text);
   }
@@ -853,6 +915,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangePhoneNumber != null) {
@@ -878,6 +941,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangePhoneNumber(this);
   }
@@ -898,6 +962,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangePhoneNumber?.call(this);
   }
@@ -918,6 +983,7 @@ class _$OnChangePhoneNumberImpl implements _OnChangePhoneNumber {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangePhoneNumber != null) {
@@ -975,15 +1041,25 @@ class __$$OnChangeCountryImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeCountryImpl implements _OnChangeCountry {
+class _$OnChangeCountryImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeCountry {
   const _$OnChangeCountryImpl(this.item);
 
   @override
   final CountryLocalModel item;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangeCountry(item: $item)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangeCountry'))
+      ..add(DiagnosticsProperty('item', item));
   }
 
   @override
@@ -1022,6 +1098,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeCountry(item);
   }
@@ -1042,6 +1119,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeCountry?.call(item);
   }
@@ -1062,6 +1140,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeCountry != null) {
@@ -1087,6 +1166,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeCountry(this);
   }
@@ -1107,6 +1187,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeCountry?.call(this);
   }
@@ -1127,6 +1208,7 @@ class _$OnChangeCountryImpl implements _OnChangeCountry {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeCountry != null) {
@@ -1184,15 +1266,25 @@ class __$$OnChangeCountryCodeImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
+class _$OnChangeCountryCodeImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeCountryCode {
   const _$OnChangeCountryCodeImpl(this.item);
 
   @override
   final CountryLocalModel item;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangeCountryCode(item: $item)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangeCountryCode'))
+      ..add(DiagnosticsProperty('item', item));
   }
 
   @override
@@ -1231,6 +1323,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeCountryCode(item);
   }
@@ -1251,6 +1344,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeCountryCode?.call(item);
   }
@@ -1271,6 +1365,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeCountryCode != null) {
@@ -1296,6 +1391,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeCountryCode(this);
   }
@@ -1316,6 +1412,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeCountryCode?.call(this);
   }
@@ -1336,6 +1433,7 @@ class _$OnChangeCountryCodeImpl implements _OnChangeCountryCode {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeCountryCode != null) {
@@ -1393,15 +1491,25 @@ class __$$OnChangeGenderImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeGenderImpl implements _OnChangeGender {
+class _$OnChangeGenderImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeGender {
   const _$OnChangeGenderImpl(this.gender);
 
   @override
   final Gender gender;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onChangeGender(gender: $gender)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onChangeGender'))
+      ..add(DiagnosticsProperty('gender', gender));
   }
 
   @override
@@ -1440,6 +1548,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeGender(gender);
   }
@@ -1460,6 +1569,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeGender?.call(gender);
   }
@@ -1480,6 +1590,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeGender != null) {
@@ -1505,6 +1616,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeGender(this);
   }
@@ -1525,6 +1637,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeGender?.call(this);
   }
@@ -1545,6 +1658,7 @@ class _$OnChangeGenderImpl implements _OnChangeGender {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeGender != null) {
@@ -1601,15 +1715,25 @@ class __$$OnSelectedGenderImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSelectedGenderImpl implements _OnSelectedGender {
+class _$OnSelectedGenderImpl
+    with DiagnosticableTreeMixin
+    implements _OnSelectedGender {
   const _$OnSelectedGenderImpl(this.genderName);
 
   @override
   final String genderName;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onSelectedGender(genderName: $genderName)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileEvent.onSelectedGender'))
+      ..add(DiagnosticsProperty('genderName', genderName));
   }
 
   @override
@@ -1649,6 +1773,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onSelectedGender(genderName);
   }
@@ -1669,6 +1794,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onSelectedGender?.call(genderName);
   }
@@ -1689,6 +1815,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedGender != null) {
@@ -1714,6 +1841,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onSelectedGender(this);
   }
@@ -1734,6 +1862,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onSelectedGender?.call(this);
   }
@@ -1754,6 +1883,7 @@ class _$OnSelectedGenderImpl implements _OnSelectedGender {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedGender != null) {
@@ -1797,12 +1927,21 @@ class __$$OnLoadCountryCodeImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
+class _$OnLoadCountryCodeImpl
+    with DiagnosticableTreeMixin
+    implements _OnLoadCountryCode {
   const _$OnLoadCountryCodeImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onLoadCountryCode()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'EditProfileEvent.onLoadCountryCode'));
   }
 
   @override
@@ -1830,6 +1969,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onLoadCountryCode();
   }
@@ -1850,6 +1990,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onLoadCountryCode?.call();
   }
@@ -1870,6 +2011,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadCountryCode != null) {
@@ -1895,6 +2037,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onLoadCountryCode(this);
   }
@@ -1915,6 +2058,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onLoadCountryCode?.call(this);
   }
@@ -1935,6 +2079,7 @@ class _$OnLoadCountryCodeImpl implements _OnLoadCountryCode {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadCountryCode != null) {
@@ -1969,12 +2114,21 @@ class __$$OnLoadCountryImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadCountryImpl implements _OnLoadCountry {
+class _$OnLoadCountryImpl
+    with DiagnosticableTreeMixin
+    implements _OnLoadCountry {
   const _$OnLoadCountryImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onLoadCountry()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'EditProfileEvent.onLoadCountry'));
   }
 
   @override
@@ -2002,6 +2156,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onLoadCountry();
   }
@@ -2022,6 +2177,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onLoadCountry?.call();
   }
@@ -2042,6 +2198,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadCountry != null) {
@@ -2067,6 +2224,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onLoadCountry(this);
   }
@@ -2087,6 +2245,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onLoadCountry?.call(this);
   }
@@ -2107,6 +2266,7 @@ class _$OnLoadCountryImpl implements _OnLoadCountry {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadCountry != null) {
@@ -2141,12 +2301,19 @@ class __$$OnLoadGenderImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnLoadGenderImpl implements _OnLoadGender {
+class _$OnLoadGenderImpl with DiagnosticableTreeMixin implements _OnLoadGender {
   const _$OnLoadGenderImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onLoadGender()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'EditProfileEvent.onLoadGender'));
   }
 
   @override
@@ -2174,6 +2341,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onLoadGender();
   }
@@ -2194,6 +2362,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onLoadGender?.call();
   }
@@ -2214,6 +2383,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadGender != null) {
@@ -2239,6 +2409,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onLoadGender(this);
   }
@@ -2259,6 +2430,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onLoadGender?.call(this);
   }
@@ -2279,6 +2451,7 @@ class _$OnLoadGenderImpl implements _OnLoadGender {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onLoadGender != null) {
@@ -2313,12 +2486,21 @@ class __$$OnSelectedCountryImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSelectedCountryImpl implements _OnSelectedCountry {
+class _$OnSelectedCountryImpl
+    with DiagnosticableTreeMixin
+    implements _OnSelectedCountry {
   const _$OnSelectedCountryImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onSelectedCountry()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'EditProfileEvent.onSelectedCountry'));
   }
 
   @override
@@ -2346,6 +2528,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onSelectedCountry();
   }
@@ -2366,6 +2549,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onSelectedCountry?.call();
   }
@@ -2386,6 +2570,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedCountry != null) {
@@ -2411,6 +2596,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onSelectedCountry(this);
   }
@@ -2431,6 +2617,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onSelectedCountry?.call(this);
   }
@@ -2451,6 +2638,7 @@ class _$OnSelectedCountryImpl implements _OnSelectedCountry {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedCountry != null) {
@@ -2486,12 +2674,21 @@ class __$$OnSelectedCountryCodeImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
+class _$OnSelectedCountryCodeImpl
+    with DiagnosticableTreeMixin
+    implements _OnSelectedCountryCode {
   const _$OnSelectedCountryCodeImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileEvent.onSelectedCountryCode()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(
+        DiagnosticsProperty('type', 'EditProfileEvent.onSelectedCountryCode'));
   }
 
   @override
@@ -2520,6 +2717,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     required TResult Function() onLoadGender,
     required TResult Function() onSelectedCountry,
     required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onSelectedCountryCode();
   }
@@ -2540,6 +2738,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     TResult? Function()? onLoadGender,
     TResult? Function()? onSelectedCountry,
     TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onSelectedCountryCode?.call();
   }
@@ -2560,6 +2759,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     TResult Function()? onLoadGender,
     TResult Function()? onSelectedCountry,
     TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedCountryCode != null) {
@@ -2585,6 +2785,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     required TResult Function(_OnSelectedCountry value) onSelectedCountry,
     required TResult Function(_OnSelectedCountryCode value)
         onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onSelectedCountryCode(this);
   }
@@ -2605,6 +2806,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     TResult? Function(_OnLoadGender value)? onLoadGender,
     TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onSelectedCountryCode?.call(this);
   }
@@ -2625,6 +2827,7 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
     TResult Function(_OnLoadGender value)? onLoadGender,
     TResult Function(_OnSelectedCountry value)? onSelectedCountry,
     TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onSelectedCountryCode != null) {
@@ -2636,6 +2839,193 @@ class _$OnSelectedCountryCodeImpl implements _OnSelectedCountryCode {
 
 abstract class _OnSelectedCountryCode implements EditProfileEvent {
   const factory _OnSelectedCountryCode() = _$OnSelectedCountryCodeImpl;
+}
+
+/// @nodoc
+abstract class _$$OnSelectedAvatarImplCopyWith<$Res> {
+  factory _$$OnSelectedAvatarImplCopyWith(_$OnSelectedAvatarImpl value,
+          $Res Function(_$OnSelectedAvatarImpl) then) =
+      __$$OnSelectedAvatarImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$OnSelectedAvatarImplCopyWithImpl<$Res>
+    extends _$EditProfileEventCopyWithImpl<$Res, _$OnSelectedAvatarImpl>
+    implements _$$OnSelectedAvatarImplCopyWith<$Res> {
+  __$$OnSelectedAvatarImplCopyWithImpl(_$OnSelectedAvatarImpl _value,
+      $Res Function(_$OnSelectedAvatarImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of EditProfileEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$OnSelectedAvatarImpl
+    with DiagnosticableTreeMixin
+    implements _OnSelectedAvatar {
+  const _$OnSelectedAvatarImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'EditProfileEvent.onSelectedAvatar()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'EditProfileEvent.onSelectedAvatar'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$OnSelectedAvatarImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() onUpdate,
+    required TResult Function(String text) onChangeFullName,
+    required TResult Function(String text) onChangeEmail,
+    required TResult Function(String text) onChangePhoneNumber,
+    required TResult Function(CountryLocalModel item) onChangeCountry,
+    required TResult Function(CountryLocalModel item) onChangeCountryCode,
+    required TResult Function(Gender gender) onChangeGender,
+    required TResult Function(String genderName) onSelectedGender,
+    required TResult Function() onLoadCountryCode,
+    required TResult Function() onLoadCountry,
+    required TResult Function() onLoadGender,
+    required TResult Function() onSelectedCountry,
+    required TResult Function() onSelectedCountryCode,
+    required TResult Function() onSelectedAvatar,
+  }) {
+    return onSelectedAvatar();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? onUpdate,
+    TResult? Function(String text)? onChangeFullName,
+    TResult? Function(String text)? onChangeEmail,
+    TResult? Function(String text)? onChangePhoneNumber,
+    TResult? Function(CountryLocalModel item)? onChangeCountry,
+    TResult? Function(CountryLocalModel item)? onChangeCountryCode,
+    TResult? Function(Gender gender)? onChangeGender,
+    TResult? Function(String genderName)? onSelectedGender,
+    TResult? Function()? onLoadCountryCode,
+    TResult? Function()? onLoadCountry,
+    TResult? Function()? onLoadGender,
+    TResult? Function()? onSelectedCountry,
+    TResult? Function()? onSelectedCountryCode,
+    TResult? Function()? onSelectedAvatar,
+  }) {
+    return onSelectedAvatar?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? onUpdate,
+    TResult Function(String text)? onChangeFullName,
+    TResult Function(String text)? onChangeEmail,
+    TResult Function(String text)? onChangePhoneNumber,
+    TResult Function(CountryLocalModel item)? onChangeCountry,
+    TResult Function(CountryLocalModel item)? onChangeCountryCode,
+    TResult Function(Gender gender)? onChangeGender,
+    TResult Function(String genderName)? onSelectedGender,
+    TResult Function()? onLoadCountryCode,
+    TResult Function()? onLoadCountry,
+    TResult Function()? onLoadGender,
+    TResult Function()? onSelectedCountry,
+    TResult Function()? onSelectedCountryCode,
+    TResult Function()? onSelectedAvatar,
+    required TResult orElse(),
+  }) {
+    if (onSelectedAvatar != null) {
+      return onSelectedAvatar();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_OnUpdate value) onUpdate,
+    required TResult Function(_OnChangeFullName value) onChangeFullName,
+    required TResult Function(_OnChangeEmail value) onChangeEmail,
+    required TResult Function(_OnChangePhoneNumber value) onChangePhoneNumber,
+    required TResult Function(_OnChangeCountry value) onChangeCountry,
+    required TResult Function(_OnChangeCountryCode value) onChangeCountryCode,
+    required TResult Function(_OnChangeGender value) onChangeGender,
+    required TResult Function(_OnSelectedGender value) onSelectedGender,
+    required TResult Function(_OnLoadCountryCode value) onLoadCountryCode,
+    required TResult Function(_OnLoadCountry value) onLoadCountry,
+    required TResult Function(_OnLoadGender value) onLoadGender,
+    required TResult Function(_OnSelectedCountry value) onSelectedCountry,
+    required TResult Function(_OnSelectedCountryCode value)
+        onSelectedCountryCode,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
+  }) {
+    return onSelectedAvatar(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_OnUpdate value)? onUpdate,
+    TResult? Function(_OnChangeFullName value)? onChangeFullName,
+    TResult? Function(_OnChangeEmail value)? onChangeEmail,
+    TResult? Function(_OnChangePhoneNumber value)? onChangePhoneNumber,
+    TResult? Function(_OnChangeCountry value)? onChangeCountry,
+    TResult? Function(_OnChangeCountryCode value)? onChangeCountryCode,
+    TResult? Function(_OnChangeGender value)? onChangeGender,
+    TResult? Function(_OnSelectedGender value)? onSelectedGender,
+    TResult? Function(_OnLoadCountryCode value)? onLoadCountryCode,
+    TResult? Function(_OnLoadCountry value)? onLoadCountry,
+    TResult? Function(_OnLoadGender value)? onLoadGender,
+    TResult? Function(_OnSelectedCountry value)? onSelectedCountry,
+    TResult? Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
+  }) {
+    return onSelectedAvatar?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_OnUpdate value)? onUpdate,
+    TResult Function(_OnChangeFullName value)? onChangeFullName,
+    TResult Function(_OnChangeEmail value)? onChangeEmail,
+    TResult Function(_OnChangePhoneNumber value)? onChangePhoneNumber,
+    TResult Function(_OnChangeCountry value)? onChangeCountry,
+    TResult Function(_OnChangeCountryCode value)? onChangeCountryCode,
+    TResult Function(_OnChangeGender value)? onChangeGender,
+    TResult Function(_OnSelectedGender value)? onSelectedGender,
+    TResult Function(_OnLoadCountryCode value)? onLoadCountryCode,
+    TResult Function(_OnLoadCountry value)? onLoadCountry,
+    TResult Function(_OnLoadGender value)? onLoadGender,
+    TResult Function(_OnSelectedCountry value)? onSelectedCountry,
+    TResult Function(_OnSelectedCountryCode value)? onSelectedCountryCode,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
+    required TResult orElse(),
+  }) {
+    if (onSelectedAvatar != null) {
+      return onSelectedAvatar(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnSelectedAvatar implements EditProfileEvent {
+  const factory _OnSelectedAvatar() = _$OnSelectedAvatarImpl;
 }
 
 /// @nodoc
@@ -2920,7 +3310,8 @@ class __$$EditProfileStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$EditProfileStateImpl extends _EditProfileState {
+class _$EditProfileStateImpl extends _EditProfileState
+    with DiagnosticableTreeMixin {
   const _$EditProfileStateImpl(
       {this.page,
       this.avatar = '',
@@ -2991,8 +3382,31 @@ class _$EditProfileStateImpl extends _EditProfileState {
   }
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'EditProfileState(page: $page, avatar: $avatar, fullName: $fullName, email: $email, phoneNumber: $phoneNumber, gender: $gender, country: $country, flag: $flag, errFullName: $errFullName, errPhoneNumber: $errPhoneNumber, enable: $enable, selectedGender: $selectedGender, selectedCountry: $selectedCountry, countries: $countries, selectedCountryCode: $selectedCountryCode, listCountryCode: $listCountryCode)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'EditProfileState'))
+      ..add(DiagnosticsProperty('page', page))
+      ..add(DiagnosticsProperty('avatar', avatar))
+      ..add(DiagnosticsProperty('fullName', fullName))
+      ..add(DiagnosticsProperty('email', email))
+      ..add(DiagnosticsProperty('phoneNumber', phoneNumber))
+      ..add(DiagnosticsProperty('gender', gender))
+      ..add(DiagnosticsProperty('country', country))
+      ..add(DiagnosticsProperty('flag', flag))
+      ..add(DiagnosticsProperty('errFullName', errFullName))
+      ..add(DiagnosticsProperty('errPhoneNumber', errPhoneNumber))
+      ..add(DiagnosticsProperty('enable', enable))
+      ..add(DiagnosticsProperty('selectedGender', selectedGender))
+      ..add(DiagnosticsProperty('selectedCountry', selectedCountry))
+      ..add(DiagnosticsProperty('countries', countries))
+      ..add(DiagnosticsProperty('selectedCountryCode', selectedCountryCode))
+      ..add(DiagnosticsProperty('listCountryCode', listCountryCode));
   }
 
   @override

@@ -21,6 +21,7 @@ mixin _$ProfileEvent {
     required TResult Function() onInit,
     required TResult Function() onChangeDarkMode,
     required TResult Function(String langName) onChangeLanguage,
+    required TResult Function() onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$ProfileEvent {
     TResult? Function()? onInit,
     TResult? Function()? onChangeDarkMode,
     TResult? Function(String langName)? onChangeLanguage,
+    TResult? Function()? onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$ProfileEvent {
     TResult Function()? onInit,
     TResult Function()? onChangeDarkMode,
     TResult Function(String langName)? onChangeLanguage,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$ProfileEvent {
     required TResult Function(_OnInit value) onInit,
     required TResult Function(_OnChangeDarkMode value) onChangeDarkMode,
     required TResult Function(_OnChangeLanguage value) onChangeLanguage,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$ProfileEvent {
     TResult? Function(_OnInit value)? onInit,
     TResult? Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult? Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$ProfileEvent {
     TResult Function(_OnInit value)? onInit,
     TResult Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -104,12 +110,18 @@ class __$$OnInitImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnInitImpl implements _OnInit {
+class _$OnInitImpl with DiagnosticableTreeMixin implements _OnInit {
   const _$OnInitImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'ProfileEvent.onInit()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'ProfileEvent.onInit'));
   }
 
   @override
@@ -127,6 +139,7 @@ class _$OnInitImpl implements _OnInit {
     required TResult Function() onInit,
     required TResult Function() onChangeDarkMode,
     required TResult Function(String langName) onChangeLanguage,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onInit();
   }
@@ -137,6 +150,7 @@ class _$OnInitImpl implements _OnInit {
     TResult? Function()? onInit,
     TResult? Function()? onChangeDarkMode,
     TResult? Function(String langName)? onChangeLanguage,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onInit?.call();
   }
@@ -147,6 +161,7 @@ class _$OnInitImpl implements _OnInit {
     TResult Function()? onInit,
     TResult Function()? onChangeDarkMode,
     TResult Function(String langName)? onChangeLanguage,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onInit != null) {
@@ -161,6 +176,7 @@ class _$OnInitImpl implements _OnInit {
     required TResult Function(_OnInit value) onInit,
     required TResult Function(_OnChangeDarkMode value) onChangeDarkMode,
     required TResult Function(_OnChangeLanguage value) onChangeLanguage,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onInit(this);
   }
@@ -171,6 +187,7 @@ class _$OnInitImpl implements _OnInit {
     TResult? Function(_OnInit value)? onInit,
     TResult? Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult? Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onInit?.call(this);
   }
@@ -181,6 +198,7 @@ class _$OnInitImpl implements _OnInit {
     TResult Function(_OnInit value)? onInit,
     TResult Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onInit != null) {
@@ -215,12 +233,21 @@ class __$$OnChangeDarkModeImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
+class _$OnChangeDarkModeImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeDarkMode {
   const _$OnChangeDarkModeImpl();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'ProfileEvent.onChangeDarkMode()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'ProfileEvent.onChangeDarkMode'));
   }
 
   @override
@@ -238,6 +265,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     required TResult Function() onInit,
     required TResult Function() onChangeDarkMode,
     required TResult Function(String langName) onChangeLanguage,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeDarkMode();
   }
@@ -248,6 +276,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     TResult? Function()? onInit,
     TResult? Function()? onChangeDarkMode,
     TResult? Function(String langName)? onChangeLanguage,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeDarkMode?.call();
   }
@@ -258,6 +287,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     TResult Function()? onInit,
     TResult Function()? onChangeDarkMode,
     TResult Function(String langName)? onChangeLanguage,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeDarkMode != null) {
@@ -272,6 +302,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     required TResult Function(_OnInit value) onInit,
     required TResult Function(_OnChangeDarkMode value) onChangeDarkMode,
     required TResult Function(_OnChangeLanguage value) onChangeLanguage,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeDarkMode(this);
   }
@@ -282,6 +313,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     TResult? Function(_OnInit value)? onInit,
     TResult? Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult? Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeDarkMode?.call(this);
   }
@@ -292,6 +324,7 @@ class _$OnChangeDarkModeImpl implements _OnChangeDarkMode {
     TResult Function(_OnInit value)? onInit,
     TResult Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeDarkMode != null) {
@@ -340,15 +373,25 @@ class __$$OnChangeLanguageImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$OnChangeLanguageImpl implements _OnChangeLanguage {
+class _$OnChangeLanguageImpl
+    with DiagnosticableTreeMixin
+    implements _OnChangeLanguage {
   const _$OnChangeLanguageImpl(this.langName);
 
   @override
   final String langName;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'ProfileEvent.onChangeLanguage(langName: $langName)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'ProfileEvent.onChangeLanguage'))
+      ..add(DiagnosticsProperty('langName', langName));
   }
 
   @override
@@ -378,6 +421,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     required TResult Function() onInit,
     required TResult Function() onChangeDarkMode,
     required TResult Function(String langName) onChangeLanguage,
+    required TResult Function() onSelectedAvatar,
   }) {
     return onChangeLanguage(langName);
   }
@@ -388,6 +432,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     TResult? Function()? onInit,
     TResult? Function()? onChangeDarkMode,
     TResult? Function(String langName)? onChangeLanguage,
+    TResult? Function()? onSelectedAvatar,
   }) {
     return onChangeLanguage?.call(langName);
   }
@@ -398,6 +443,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     TResult Function()? onInit,
     TResult Function()? onChangeDarkMode,
     TResult Function(String langName)? onChangeLanguage,
+    TResult Function()? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeLanguage != null) {
@@ -412,6 +458,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     required TResult Function(_OnInit value) onInit,
     required TResult Function(_OnChangeDarkMode value) onChangeDarkMode,
     required TResult Function(_OnChangeLanguage value) onChangeLanguage,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
   }) {
     return onChangeLanguage(this);
   }
@@ -422,6 +469,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     TResult? Function(_OnInit value)? onInit,
     TResult? Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult? Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
   }) {
     return onChangeLanguage?.call(this);
   }
@@ -432,6 +480,7 @@ class _$OnChangeLanguageImpl implements _OnChangeLanguage {
     TResult Function(_OnInit value)? onInit,
     TResult Function(_OnChangeDarkMode value)? onChangeDarkMode,
     TResult Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
     required TResult orElse(),
   }) {
     if (onChangeLanguage != null) {
@@ -455,9 +504,136 @@ abstract class _OnChangeLanguage implements ProfileEvent {
 }
 
 /// @nodoc
+abstract class _$$OnSelectedAvatarImplCopyWith<$Res> {
+  factory _$$OnSelectedAvatarImplCopyWith(_$OnSelectedAvatarImpl value,
+          $Res Function(_$OnSelectedAvatarImpl) then) =
+      __$$OnSelectedAvatarImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$OnSelectedAvatarImplCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$OnSelectedAvatarImpl>
+    implements _$$OnSelectedAvatarImplCopyWith<$Res> {
+  __$$OnSelectedAvatarImplCopyWithImpl(_$OnSelectedAvatarImpl _value,
+      $Res Function(_$OnSelectedAvatarImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProfileEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$OnSelectedAvatarImpl
+    with DiagnosticableTreeMixin
+    implements _OnSelectedAvatar {
+  const _$OnSelectedAvatarImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'ProfileEvent.onSelectedAvatar()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'ProfileEvent.onSelectedAvatar'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$OnSelectedAvatarImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() onInit,
+    required TResult Function() onChangeDarkMode,
+    required TResult Function(String langName) onChangeLanguage,
+    required TResult Function() onSelectedAvatar,
+  }) {
+    return onSelectedAvatar();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? onInit,
+    TResult? Function()? onChangeDarkMode,
+    TResult? Function(String langName)? onChangeLanguage,
+    TResult? Function()? onSelectedAvatar,
+  }) {
+    return onSelectedAvatar?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? onInit,
+    TResult Function()? onChangeDarkMode,
+    TResult Function(String langName)? onChangeLanguage,
+    TResult Function()? onSelectedAvatar,
+    required TResult orElse(),
+  }) {
+    if (onSelectedAvatar != null) {
+      return onSelectedAvatar();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_OnInit value) onInit,
+    required TResult Function(_OnChangeDarkMode value) onChangeDarkMode,
+    required TResult Function(_OnChangeLanguage value) onChangeLanguage,
+    required TResult Function(_OnSelectedAvatar value) onSelectedAvatar,
+  }) {
+    return onSelectedAvatar(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_OnInit value)? onInit,
+    TResult? Function(_OnChangeDarkMode value)? onChangeDarkMode,
+    TResult? Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult? Function(_OnSelectedAvatar value)? onSelectedAvatar,
+  }) {
+    return onSelectedAvatar?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_OnInit value)? onInit,
+    TResult Function(_OnChangeDarkMode value)? onChangeDarkMode,
+    TResult Function(_OnChangeLanguage value)? onChangeLanguage,
+    TResult Function(_OnSelectedAvatar value)? onSelectedAvatar,
+    required TResult orElse(),
+  }) {
+    if (onSelectedAvatar != null) {
+      return onSelectedAvatar(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnSelectedAvatar implements ProfileEvent {
+  const factory _OnSelectedAvatar() = _$OnSelectedAvatarImpl;
+}
+
+/// @nodoc
 mixin _$ProfileState {
   PageCommand? get pageCommand => throw _privateConstructorUsedError;
   bool get isDarkMode => throw _privateConstructorUsedError;
+  String get avatar => throw _privateConstructorUsedError;
   String? get languageName => throw _privateConstructorUsedError;
 
   /// Create a copy of ProfileState
@@ -473,7 +649,11 @@ abstract class $ProfileStateCopyWith<$Res> {
           ProfileState value, $Res Function(ProfileState) then) =
       _$ProfileStateCopyWithImpl<$Res, ProfileState>;
   @useResult
-  $Res call({PageCommand? pageCommand, bool isDarkMode, String? languageName});
+  $Res call(
+      {PageCommand? pageCommand,
+      bool isDarkMode,
+      String avatar,
+      String? languageName});
 }
 
 /// @nodoc
@@ -493,6 +673,7 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
   $Res call({
     Object? pageCommand = freezed,
     Object? isDarkMode = null,
+    Object? avatar = null,
     Object? languageName = freezed,
   }) {
     return _then(_value.copyWith(
@@ -504,6 +685,10 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
           ? _value.isDarkMode
           : isDarkMode // ignore: cast_nullable_to_non_nullable
               as bool,
+      avatar: null == avatar
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as String,
       languageName: freezed == languageName
           ? _value.languageName
           : languageName // ignore: cast_nullable_to_non_nullable
@@ -520,7 +705,11 @@ abstract class _$$ProfileStateImplCopyWith<$Res>
       __$$ProfileStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({PageCommand? pageCommand, bool isDarkMode, String? languageName});
+  $Res call(
+      {PageCommand? pageCommand,
+      bool isDarkMode,
+      String avatar,
+      String? languageName});
 }
 
 /// @nodoc
@@ -538,6 +727,7 @@ class __$$ProfileStateImplCopyWithImpl<$Res>
   $Res call({
     Object? pageCommand = freezed,
     Object? isDarkMode = null,
+    Object? avatar = null,
     Object? languageName = freezed,
   }) {
     return _then(_$ProfileStateImpl(
@@ -549,6 +739,10 @@ class __$$ProfileStateImplCopyWithImpl<$Res>
           ? _value.isDarkMode
           : isDarkMode // ignore: cast_nullable_to_non_nullable
               as bool,
+      avatar: null == avatar
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as String,
       languageName: freezed == languageName
           ? _value.languageName
           : languageName // ignore: cast_nullable_to_non_nullable
@@ -559,9 +753,12 @@ class __$$ProfileStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ProfileStateImpl extends _ProfileState {
+class _$ProfileStateImpl extends _ProfileState with DiagnosticableTreeMixin {
   const _$ProfileStateImpl(
-      {this.pageCommand, this.isDarkMode = false, this.languageName})
+      {this.pageCommand,
+      this.isDarkMode = false,
+      this.avatar = '',
+      this.languageName})
       : super._();
 
   @override
@@ -570,11 +767,25 @@ class _$ProfileStateImpl extends _ProfileState {
   @JsonKey()
   final bool isDarkMode;
   @override
+  @JsonKey()
+  final String avatar;
+  @override
   final String? languageName;
 
   @override
-  String toString() {
-    return 'ProfileState(pageCommand: $pageCommand, isDarkMode: $isDarkMode, languageName: $languageName)';
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'ProfileState(pageCommand: $pageCommand, isDarkMode: $isDarkMode, avatar: $avatar, languageName: $languageName)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'ProfileState'))
+      ..add(DiagnosticsProperty('pageCommand', pageCommand))
+      ..add(DiagnosticsProperty('isDarkMode', isDarkMode))
+      ..add(DiagnosticsProperty('avatar', avatar))
+      ..add(DiagnosticsProperty('languageName', languageName));
   }
 
   @override
@@ -586,13 +797,14 @@ class _$ProfileStateImpl extends _ProfileState {
                 other.pageCommand == pageCommand) &&
             (identical(other.isDarkMode, isDarkMode) ||
                 other.isDarkMode == isDarkMode) &&
+            (identical(other.avatar, avatar) || other.avatar == avatar) &&
             (identical(other.languageName, languageName) ||
                 other.languageName == languageName));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, pageCommand, isDarkMode, languageName);
+      Object.hash(runtimeType, pageCommand, isDarkMode, avatar, languageName);
 
   /// Create a copy of ProfileState
   /// with the given fields replaced by the non-null parameter values.
@@ -607,6 +819,7 @@ abstract class _ProfileState extends ProfileState {
   const factory _ProfileState(
       {final PageCommand? pageCommand,
       final bool isDarkMode,
+      final String avatar,
       final String? languageName}) = _$ProfileStateImpl;
   const _ProfileState._() : super._();
 
@@ -614,6 +827,8 @@ abstract class _ProfileState extends ProfileState {
   PageCommand? get pageCommand;
   @override
   bool get isDarkMode;
+  @override
+  String get avatar;
   @override
   String? get languageName;
 

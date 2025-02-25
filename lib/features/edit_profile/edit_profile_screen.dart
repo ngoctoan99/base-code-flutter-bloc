@@ -46,7 +46,7 @@ class EditProfileScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 16),
                   child: BlocBuilder<EditProfileBloc, EditProfileState>(
                     builder: (context, state) {
-                      return AvatarProfile(url: state.avatar);
+                      return AvatarProfile(url: state.avatar, onChangeAvatar : (){bloc.add(EditProfileEvent.onSelectedAvatar());});
                     },
                   ),
                 ),

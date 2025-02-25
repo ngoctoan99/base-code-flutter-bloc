@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import '../../../../../core/common/widgets/svg_widget.dart';
 
@@ -22,12 +24,18 @@ class AvatarProfile extends StatelessWidget {
                     width: 120,
                     fit: BoxFit.cover,
                   )
-                : Image.asset(
-                    'assets/images/avatar_default.jpg',
-                    height: 120,
-                    width: 120,
-                    fit: BoxFit.cover,
-                  ),
+                : url.isNotEmpty
+                    ? Image.file(
+                        File(url),
+                        height: 120,
+                        width: 120,
+                      )
+                    : Image.asset(
+                        'assets/images/avatar_default.jpg',
+                        height: 120,
+                        width: 120,
+                        fit: BoxFit.cover,
+                      ),
           ),
           Positioned(
               bottom: 8,

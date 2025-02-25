@@ -15,4 +15,5 @@ class EditProfileEvent with _$EditProfileEvent {
   const factory EditProfileEvent.onLoadGender() = _OnLoadGender;
   const factory EditProfileEvent.onSelectedCountry() = _OnSelectedCountry;
   const factory EditProfileEvent.onSelectedCountryCode() = _OnSelectedCountryCode;
+  const factory EditProfileEvent.onSelectedAvatar() = _OnSelectedAvatar;
 }

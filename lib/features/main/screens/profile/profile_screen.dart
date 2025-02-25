@@ -1,6 +1,7 @@
 import 'package:base_source_flutter_bloc/features/main/screens/profile/widgets/avatar_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/common/constant/routers.dart';
 import '../../../../core/common/enums/menu_type.dart';
 import '../../../../core/common/utils/bottom_sheet_utils.dart';
 import '../../../../core/common/widgets/svg_widget.dart';
@@ -26,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 24),
           child: Column(
             children: [
-              AvatarProfile(url: ""),
+              AvatarProfile(url: "",onChangeAvatar: (){Navigator.pushNamed(context,editProfileRoute);},),
               const SizedBox(
                 height: 16,
               ),
