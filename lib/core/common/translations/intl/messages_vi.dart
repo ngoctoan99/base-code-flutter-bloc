@@ -187,6 +187,10 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Chất lượng video và âm thanh tốt hơn."),
         "txt_watch_all_you_want_ad_free": MessageLookupByLibrary.simpleMessage(
             "Xem mọi thứ bạn muốn. Không có quảng cáo."),
-        "txt_year": MessageLookupByLibrary.simpleMessage("năm")
+        "txt_year": MessageLookupByLibrary.simpleMessage("năm"),
+    "title_error_screen": MessageLookupByLibrary.simpleMessage("Có gì đó không ổn"),
+    "txt_cancel": MessageLookupByLibrary.simpleMessage("Hủy"),
+    "txt_yes_logout": MessageLookupByLibrary.simpleMessage("Vâng, Đăng Xuất"),
+    "txt_confirm_logout": MessageLookupByLibrary.simpleMessage("Bạn có chắc muốn đăng xuất không?"),
       };
 }

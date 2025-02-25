@@ -4,6 +4,7 @@ import '../../../../di/dependency_injection.dart';
 import '../../../../features/main/bloc/main_bloc.dart';
 import '../../../data/data_resource/local/manager_shared_preferences.dart';
 import '../../constant/routers.dart';
+import '../../translations/l10n.dart';
 import '../svg_widget.dart';
 
 class BottomSheetLogout extends StatelessWidget {
@@ -27,7 +28,7 @@ class BottomSheetLogout extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Logout',
+            S.of(context).label_menu_log_out,
             style: Theme.of(context)
                 .textTheme
                 .titleLarge!
@@ -37,7 +38,7 @@ class BottomSheetLogout extends StatelessWidget {
             padding: EdgeInsets.all(16),
             child: Divider(),
           ),
-          Text('Are you sure you want to log out?',
+          Text(S.of(context).txt_confirm_logout,
               style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(
             height: 20,
@@ -57,7 +58,7 @@ class BottomSheetLogout extends StatelessWidget {
                     backgroundColor: Colors.red.withOpacity(0.5),
                     minimumSize: Size(
                         (MediaQuery.sizeOf(context).width * 0.5 - 20), 46)),
-                child: const Text('Cancel'),
+                child: Text(S.of(context).txt_cancel),
               ),
               const SizedBox(
                 width: 8,
@@ -73,7 +74,7 @@ class BottomSheetLogout extends StatelessWidget {
                       minimumSize: Size(
                           (MediaQuery.sizeOf(context).width * 0.5 - 20), 46)),
                   child: Text(
-                    'Yes, Logout',
+                    S.of(context).txt_yes_logout,
                     style: Theme.of(context)
                         .textTheme
                         .titleMedium!

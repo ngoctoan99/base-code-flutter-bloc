@@ -17,7 +17,7 @@ class LanguageBloc extends Bloc<LanguageEvent, LanguageState> {
 
     on<_GetLanguages>((event, emit) async {
       SharedPreferences prefs = await SharedPreferences.getInstance();
-      String locale = prefs.getString('locale')!;
+      String locale = prefs.getString('locale') != null ? prefs.getString('locale')! : "en";
       emit(state.copyWith(
         languages: languages,
         locale: locale,

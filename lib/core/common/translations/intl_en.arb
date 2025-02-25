@@ -114,5 +114,9 @@
   "txt_filter_sort": "Sort",
   "btn_reset": "Reset",
   "btn_apply": "Apply",
-  "txt_filter_all_periods": "All Periods"
+  "txt_filter_all_periods": "All Periods",
+  "title_error_screen": "Something went wrong",
+  "txt_cancel": "Cancel",
+  "txt_yes_logout": "Yes, Logout",
+  "txt_confirm_logout": "Are you sure you want to log out?"
 }

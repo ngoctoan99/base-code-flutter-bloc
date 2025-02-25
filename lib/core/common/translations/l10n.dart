@@ -1139,6 +1139,44 @@ class S {
       args: [],
     );
   }
+
+
+  /// `Error Title Screen`
+  String get title_error_screen {
+    return Intl.message(
+      'Error Title Screen',
+      name: 'title_error_screen',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Error Title Screen`
+  String get txt_cancel {
+    return Intl.message(
+      'Error Title Screen',
+      name: 'txt_cancel',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Error Title Screen`
+  String get txt_yes_logout {
+    return Intl.message(
+      'Error Title Screen',
+      name: 'txt_yes_logout',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Error Title Screen`
+  String get txt_confirm_logout {
+    return Intl.message(
+      'Error Title Screen',
+      name: 'txt_confirm_logout',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

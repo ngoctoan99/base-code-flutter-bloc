@@ -188,6 +188,11 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Video & Audio Quality is Better."),
         "txt_watch_all_you_want_ad_free": MessageLookupByLibrary.simpleMessage(
             "Watch all you want. Ad-free."),
-        "txt_year": MessageLookupByLibrary.simpleMessage("year")
+        "txt_year": MessageLookupByLibrary.simpleMessage("year"),
+    "title_error_screen": MessageLookupByLibrary.simpleMessage("Something went wrong"),
+
+    "txt_cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+    "txt_yes_logout": MessageLookupByLibrary.simpleMessage("Yes, Logout"),
+    "txt_confirm_logout": MessageLookupByLibrary.simpleMessage("Are you sure you want to log out?"),
       };
 }

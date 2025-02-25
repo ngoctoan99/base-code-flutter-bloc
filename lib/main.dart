@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
             return SafeArea(
               child: MaterialApp(
                 navigatorKey: navigatorKey,
-                initialRoute: mainRoute,
+                initialRoute: splashRoute,
                 onGenerateRoute: AppRouters().generateRoute,
                 title: 'Movie',
                 debugShowCheckedModeBanner: false,

@@ -114,5 +114,9 @@
   "txt_filter_sort": "Sort",
   "btn_reset": "Reset",
   "btn_apply": "Apply",
-  "txt_filter_all_periods": "All Periods"
+  "txt_filter_all_periods": "All Periods",
+  "title_error_screen": "Có gì đó không ổn",
+  "txt_cancel": "Hủy",
+  "txt_yes_logout": "Vâng, Đăng Xuất",
+  "txt_confirm_logout": "Bạn có chắc muốn đăng xuất không?"
 }
