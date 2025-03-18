@@ -13,8 +13,10 @@ class WellComeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bloc = getIt<WellComeBloc>();
+    bloc.add(WellComeEvent.isDarkMode());
     return BlocProvider<WellComeBloc>(
-      create: (context) => getIt<WellComeBloc>(),
+      create: (context) => bloc,
       child: Scaffold(
         body: SafeArea(
           top: false,
@@ -54,7 +56,7 @@ class WellComeScreen extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .titleMedium!
-                              .copyWith(color: Colors.white, fontSize: 18),
+                              .copyWith(color: bloc.state.isDarkMode ? Colors.white : Colors.black, fontSize: 18),
                         ),
                         const SizedBox(
                           height: 16,
@@ -66,7 +68,7 @@ class WellComeScreen extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleSmall
-                                ?.copyWith(color: Colors.white, fontSize: 16),
+                                ?.copyWith(color: bloc.state.isDarkMode ? Colors.white : Colors.black, fontSize: 16),
                             textAlign: TextAlign.center,
                           ),
                         ),

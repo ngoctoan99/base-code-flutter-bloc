@@ -39,7 +39,10 @@ class BottomSheetLogout extends StatelessWidget {
             child: Divider(),
           ),
           Text(S.of(context).txt_confirm_logout,
-              style: Theme.of(context).textTheme.titleMedium),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium!
+                  .copyWith(color: Colors.black)),
           const SizedBox(
             height: 20,
           ),
@@ -66,8 +69,10 @@ class BottomSheetLogout extends StatelessWidget {
               TextButton(
                   onPressed: () {
                     getIt.resetLazySingleton<MainBloc>();
-                    getIt<ManagerSharedPreferences>().setBool("loggedIn", false);
-                    Navigator.pushNamedAndRemoveUntil(context, loginRoute, (route) => false);
+                    getIt<ManagerSharedPreferences>()
+                        .setBool("loggedIn", false);
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, loginRoute, (route) => false);
                   },
                   style: TextButton.styleFrom(
                       backgroundColor: Theme.of(context).primaryColor,

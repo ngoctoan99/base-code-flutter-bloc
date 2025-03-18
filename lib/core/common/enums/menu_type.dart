@@ -67,19 +67,19 @@ enum MenuType {
       case MenuType.notification:
         return notificationRoute;
       case MenuType.download:
-        return '';
+        return notificationRoute;
       case MenuType.security:
-        return '';
+        return notificationRoute;
       case MenuType.language:
         return languageRoute;
       case MenuType.darkMode:
-        return '';
+        return notificationRoute;
       case MenuType.helpCenter:
-        return '';
+        return notificationRoute;
       case MenuType.privacyPolicy:
-        return '';
+        return notificationRoute;
       case MenuType.logout:
-        return '';
+        return notificationRoute;
     }
   }
 }

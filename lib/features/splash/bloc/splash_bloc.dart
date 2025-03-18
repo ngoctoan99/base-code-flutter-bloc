@@ -20,6 +20,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
         emit(state.copyWith(
           pageCmd: PageCommandNavigatorPage(
             page: loggedIn ? mainRoute : welComeRoute,
+            // page: mainRoute
           ),
         ));
       });

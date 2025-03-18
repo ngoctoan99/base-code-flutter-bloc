@@ -19,11 +19,11 @@ ThemeData themeData(BuildContext context, bool isDarkMode) {
       type: BottomNavigationBarType.fixed,
       backgroundColor: isDarkMode ? Colors.black : Colors.white,
       selectedItemColor: const Color(0xFFE21221),
-      unselectedItemColor: isDarkMode ? Colors.grey[400] : const Color(0xff9E9E9E),
+      unselectedItemColor: isDarkMode ? Colors.white : const Color(0xff9E9E9E),
       unselectedLabelStyle: Theme.of(context)
           .textTheme
           .titleMedium!
-          .copyWith(color: isDarkMode ? Colors.grey[400] : const Color(0xff9E9E9E), fontSize: 10),
+          .copyWith(color: isDarkMode ? Colors.white : const Color(0xff9E9E9E), fontSize: 10),
       selectedLabelStyle: Theme.of(context)
           .textTheme
           .titleMedium!

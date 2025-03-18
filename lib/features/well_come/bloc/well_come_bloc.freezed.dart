@@ -20,18 +20,21 @@ mixin _$WellComeEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(int index) onPageView,
     required TResult Function(String router) onNavigate,
+    required TResult Function() isDarkMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(int index)? onPageView,
     TResult? Function(String router)? onNavigate,
+    TResult? Function()? isDarkMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(int index)? onPageView,
     TResult Function(String router)? onNavigate,
+    TResult Function()? isDarkMode,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -39,18 +42,21 @@ mixin _$WellComeEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(_OnPageView value) onPageView,
     required TResult Function(_OnNavigate value) onNavigate,
+    required TResult Function(_isDarkMode value) isDarkMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_OnPageView value)? onPageView,
     TResult? Function(_OnNavigate value)? onNavigate,
+    TResult? Function(_isDarkMode value)? isDarkMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_OnPageView value)? onPageView,
     TResult Function(_OnNavigate value)? onNavigate,
+    TResult Function(_isDarkMode value)? isDarkMode,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -147,6 +153,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult when<TResult extends Object?>({
     required TResult Function(int index) onPageView,
     required TResult Function(String router) onNavigate,
+    required TResult Function() isDarkMode,
   }) {
     return onPageView(index);
   }
@@ -156,6 +163,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(int index)? onPageView,
     TResult? Function(String router)? onNavigate,
+    TResult? Function()? isDarkMode,
   }) {
     return onPageView?.call(index);
   }
@@ -165,6 +173,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(int index)? onPageView,
     TResult Function(String router)? onNavigate,
+    TResult Function()? isDarkMode,
     required TResult orElse(),
   }) {
     if (onPageView != null) {
@@ -178,6 +187,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult map<TResult extends Object?>({
     required TResult Function(_OnPageView value) onPageView,
     required TResult Function(_OnNavigate value) onNavigate,
+    required TResult Function(_isDarkMode value) isDarkMode,
   }) {
     return onPageView(this);
   }
@@ -187,6 +197,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_OnPageView value)? onPageView,
     TResult? Function(_OnNavigate value)? onNavigate,
+    TResult? Function(_isDarkMode value)? isDarkMode,
   }) {
     return onPageView?.call(this);
   }
@@ -196,6 +207,7 @@ class _$OnPageViewImpl implements _OnPageView {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_OnPageView value)? onPageView,
     TResult Function(_OnNavigate value)? onNavigate,
+    TResult Function(_isDarkMode value)? isDarkMode,
     required TResult orElse(),
   }) {
     if (onPageView != null) {
@@ -287,6 +299,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult when<TResult extends Object?>({
     required TResult Function(int index) onPageView,
     required TResult Function(String router) onNavigate,
+    required TResult Function() isDarkMode,
   }) {
     return onNavigate(router);
   }
@@ -296,6 +309,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(int index)? onPageView,
     TResult? Function(String router)? onNavigate,
+    TResult? Function()? isDarkMode,
   }) {
     return onNavigate?.call(router);
   }
@@ -305,6 +319,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(int index)? onPageView,
     TResult Function(String router)? onNavigate,
+    TResult Function()? isDarkMode,
     required TResult orElse(),
   }) {
     if (onNavigate != null) {
@@ -318,6 +333,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult map<TResult extends Object?>({
     required TResult Function(_OnPageView value) onPageView,
     required TResult Function(_OnNavigate value) onNavigate,
+    required TResult Function(_isDarkMode value) isDarkMode,
   }) {
     return onNavigate(this);
   }
@@ -327,6 +343,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_OnPageView value)? onPageView,
     TResult? Function(_OnNavigate value)? onNavigate,
+    TResult? Function(_isDarkMode value)? isDarkMode,
   }) {
     return onNavigate?.call(this);
   }
@@ -336,6 +353,7 @@ class _$OnNavigateImpl implements _OnNavigate {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_OnPageView value)? onPageView,
     TResult Function(_OnNavigate value)? onNavigate,
+    TResult Function(_isDarkMode value)? isDarkMode,
     required TResult orElse(),
   }) {
     if (onNavigate != null) {
@@ -358,9 +376,121 @@ abstract class _OnNavigate implements WellComeEvent {
 }
 
 /// @nodoc
+abstract class _$$isDarkModeImplCopyWith<$Res> {
+  factory _$$isDarkModeImplCopyWith(
+          _$isDarkModeImpl value, $Res Function(_$isDarkModeImpl) then) =
+      __$$isDarkModeImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$isDarkModeImplCopyWithImpl<$Res>
+    extends _$WellComeEventCopyWithImpl<$Res, _$isDarkModeImpl>
+    implements _$$isDarkModeImplCopyWith<$Res> {
+  __$$isDarkModeImplCopyWithImpl(
+      _$isDarkModeImpl _value, $Res Function(_$isDarkModeImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of WellComeEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$isDarkModeImpl implements _isDarkMode {
+  const _$isDarkModeImpl();
+
+  @override
+  String toString() {
+    return 'WellComeEvent.isDarkMode()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$isDarkModeImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int index) onPageView,
+    required TResult Function(String router) onNavigate,
+    required TResult Function() isDarkMode,
+  }) {
+    return isDarkMode();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int index)? onPageView,
+    TResult? Function(String router)? onNavigate,
+    TResult? Function()? isDarkMode,
+  }) {
+    return isDarkMode?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int index)? onPageView,
+    TResult Function(String router)? onNavigate,
+    TResult Function()? isDarkMode,
+    required TResult orElse(),
+  }) {
+    if (isDarkMode != null) {
+      return isDarkMode();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_OnPageView value) onPageView,
+    required TResult Function(_OnNavigate value) onNavigate,
+    required TResult Function(_isDarkMode value) isDarkMode,
+  }) {
+    return isDarkMode(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_OnPageView value)? onPageView,
+    TResult? Function(_OnNavigate value)? onNavigate,
+    TResult? Function(_isDarkMode value)? isDarkMode,
+  }) {
+    return isDarkMode?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_OnPageView value)? onPageView,
+    TResult Function(_OnNavigate value)? onNavigate,
+    TResult Function(_isDarkMode value)? isDarkMode,
+    required TResult orElse(),
+  }) {
+    if (isDarkMode != null) {
+      return isDarkMode(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _isDarkMode implements WellComeEvent {
+  const factory _isDarkMode() = _$isDarkModeImpl;
+}
+
+/// @nodoc
 mixin _$WellComeState {
   PageCommand? get cmd => throw _privateConstructorUsedError;
   int get position => throw _privateConstructorUsedError;
+  bool get isDarkMode => throw _privateConstructorUsedError;
 
   /// Create a copy of WellComeState
   /// with the given fields replaced by the non-null parameter values.
@@ -375,7 +505,7 @@ abstract class $WellComeStateCopyWith<$Res> {
           WellComeState value, $Res Function(WellComeState) then) =
       _$WellComeStateCopyWithImpl<$Res, WellComeState>;
   @useResult
-  $Res call({PageCommand? cmd, int position});
+  $Res call({PageCommand? cmd, int position, bool isDarkMode});
 }
 
 /// @nodoc
@@ -395,6 +525,7 @@ class _$WellComeStateCopyWithImpl<$Res, $Val extends WellComeState>
   $Res call({
     Object? cmd = freezed,
     Object? position = null,
+    Object? isDarkMode = null,
   }) {
     return _then(_value.copyWith(
       cmd: freezed == cmd
@@ -405,6 +536,10 @@ class _$WellComeStateCopyWithImpl<$Res, $Val extends WellComeState>
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
+      isDarkMode: null == isDarkMode
+          ? _value.isDarkMode
+          : isDarkMode // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 }
@@ -417,7 +552,7 @@ abstract class _$$WellComeStateImplCopyWith<$Res>
       __$$WellComeStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({PageCommand? cmd, int position});
+  $Res call({PageCommand? cmd, int position, bool isDarkMode});
 }
 
 /// @nodoc
@@ -435,6 +570,7 @@ class __$$WellComeStateImplCopyWithImpl<$Res>
   $Res call({
     Object? cmd = freezed,
     Object? position = null,
+    Object? isDarkMode = null,
   }) {
     return _then(_$WellComeStateImpl(
       cmd: freezed == cmd
@@ -445,6 +581,10 @@ class __$$WellComeStateImplCopyWithImpl<$Res>
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
+      isDarkMode: null == isDarkMode
+          ? _value.isDarkMode
+          : isDarkMode // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -452,17 +592,22 @@ class __$$WellComeStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$WellComeStateImpl extends _WellComeState {
-  const _$WellComeStateImpl({this.cmd, this.position = 0}) : super._();
+  const _$WellComeStateImpl(
+      {this.cmd, this.position = 0, this.isDarkMode = false})
+      : super._();
 
   @override
   final PageCommand? cmd;
   @override
   @JsonKey()
   final int position;
+  @override
+  @JsonKey()
+  final bool isDarkMode;
 
   @override
   String toString() {
-    return 'WellComeState(cmd: $cmd, position: $position)';
+    return 'WellComeState(cmd: $cmd, position: $position, isDarkMode: $isDarkMode)';
   }
 
   @override
@@ -472,11 +617,13 @@ class _$WellComeStateImpl extends _WellComeState {
             other is _$WellComeStateImpl &&
             (identical(other.cmd, cmd) || other.cmd == cmd) &&
             (identical(other.position, position) ||
-                other.position == position));
+                other.position == position) &&
+            (identical(other.isDarkMode, isDarkMode) ||
+                other.isDarkMode == isDarkMode));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, cmd, position);
+  int get hashCode => Object.hash(runtimeType, cmd, position, isDarkMode);
 
   /// Create a copy of WellComeState
   /// with the given fields replaced by the non-null parameter values.
@@ -488,14 +635,18 @@ class _$WellComeStateImpl extends _WellComeState {
 }
 
 abstract class _WellComeState extends WellComeState {
-  const factory _WellComeState({final PageCommand? cmd, final int position}) =
-      _$WellComeStateImpl;
+  const factory _WellComeState(
+      {final PageCommand? cmd,
+      final int position,
+      final bool isDarkMode}) = _$WellComeStateImpl;
   const _WellComeState._() : super._();
 
   @override
   PageCommand? get cmd;
   @override
   int get position;
+  @override
+  bool get isDarkMode;
 
   /// Create a copy of WellComeState
   /// with the given fields replaced by the non-null parameter values.

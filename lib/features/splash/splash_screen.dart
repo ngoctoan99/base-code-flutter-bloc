@@ -17,6 +17,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: BlocProvider<SplashBloc>(
         create: (_) => getIt<SplashBloc>()..add(SplashEvent.onNavigate()),
+        // create: (_) => bloc,
         child: BlocListener<SplashBloc, SplashState>(
           listener: (context, state) {
             if (state.pageCmd is PageCommandNavigatorPage) {

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/common/enums/menu_type.dart';
 import '../../../../../core/common/resource/icons.dart';
 import '../../../../../core/common/widgets/svg_widget.dart';
+import '../../../../../core/cubit/app_cubit.dart';
 import '../bloc/profile_bloc.dart';
 
 class MenuItem extends StatelessWidget {

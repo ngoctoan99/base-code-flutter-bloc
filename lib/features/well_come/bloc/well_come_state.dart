@@ -6,5 +6,6 @@ class WellComeState with _$WellComeState {
   const factory WellComeState({
     PageCommand? cmd,
     @Default(0) int position,
+    @Default(false) bool isDarkMode,
 }) = _WellComeState;
 }
